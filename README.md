@@ -1,47 +1,38 @@
-🤖 Ollama LLM RAG Chatbot
-=================================
+## 🤖 Ollama LLM Chatbot
 
-A **Retrieval-Augmented Generation (RAG)** chatbot powered by **Ollama**, built with **Python**, **Streamlit**, and **Tailwind CSS v4**.  
-This app lets you **chat with your own documents**, combining local LLM power with fast, context-aware retrieval for high-quality answers.
-
----
-
-🏷️ Project Title and Description
----------------------------------
-
-**Ollama LLM RAG Chatbot** – a simple, production-ready template for building **local, private, and document-aware** chatbots.  
-Point it at your data, let it build a knowledge index, and start asking questions in a clean web UI.
+A simple, production-ready **Streamlit interface** for chatting with a locally installed **Large Language Model (LLM)** using **Ollama**.  
+It provides an easy-to-use web interface where users can type queries, view responses, and maintain chat history — all running locally and privately.
 
 ---
 
-🚀 Features
------------
+## 🚀 Features
 
-- **🔍 Retrieval-Augmented Generation (RAG)**:  
-  Uses document chunks + embeddings to provide grounded, source-aware answers.
-- **🧠 Local LLM via Ollama**:  
-  Runs entirely on your machine using Ollama models (no external API keys needed).
-- **💬 Streamlit Chat UI**:  
-  Clean, interactive chat interface with conversation history.
-- **🎨 Tailwind CSS v4 Styling**:  
-  Modern, responsive layout and polished UI components.
-- **📁 Document-Aware**:  
-  Load and query your own documents (PDFs, text, etc. – depending on how you wire it up).
-- **⚡ Fast Iteration**:  
-  Simple Python codebase that’s easy to customize and extend.
+- **🧠 Local Ollama LLM** – Connects directly to a locally hosted Ollama LLM (e.g. `llama3`, `phi3`).
+- **💬 Interactive Chat UI** – Clean chat interface built with Streamlit.
+- **🕒 Conversation History** – Previous messages displayed in an organized layout.
+- **🔄 Reset Chat** – Button to clear previous chats and start fresh.
+- **⚙️ Model Selection** – Choose from available Ollama models.
+- **✅ Connection Check** – Verifies connectivity to the Ollama server automatically.
 
 ---
 
-📦 Installation & Setup
-------------------------
+## 🧩 Requirements
+
+- **Python** 3.9+
+- **Ollama** (installed and running locally)
+- **Python libraries**: `streamlit`, `requests` (installed via `requirements.txt`)
+
+---
+
+## 📦 Installation & Setup
 
 > All commands below use **bash** syntax. On Windows with PowerShell, just adjust path/activation accordingly.
 
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <YOUR_REPO_URL> "Ollama-LLM-RAG-Chatbot"
-cd "Ollama-LLM-RAG-Chatbot"
+git clone <YOUR_REPO_URL> "Ollama LLM Chatbot"
+cd "Ollama LLM Chatbot"
 ```
 
 ### 2️⃣ Create and Activate a Virtual Environment
@@ -99,37 +90,33 @@ Then open the URL shown in your terminal (usually `http://localhost:8501`) in yo
 
 ---
 
-💡 How It Works
-----------------
+## 💡 How It Works
 
-- **1. Ingestion & Indexing**  
-  - Your documents are loaded and split into chunks.  
+- **Ingestion & Indexing**
+  - Your documents are loaded and split into chunks.
   - Each chunk is converted into an **embedding vector** and stored in a lightweight vector index.
 
-- **2. Query Processing**  
-  - When you ask a question, it’s embedded and used to search the index.  
+- **Query Processing**
+  - When you ask a question, it’s embedded and used to search the index.
   - The most relevant chunks are retrieved as **context** for the LLM.
 
-- **3. RAG Generation**  
-  - The retrieved context + your question are sent to the **Ollama** model.  
-  - The LLM generates a grounded answer that cites or reflects your underlying documents.
+- **RAG Generation**
+  - The retrieved context and your question are sent to the Ollama model.
+  - The LLM generates a grounded answer that reflects your underlying documents.
 
-- **4. Web UI Layer (Streamlit + Tailwind CSS v4)**  
-  - Streamlit handles the interaction loop (inputs, outputs, session state).  
-  - Tailwind v4 powers the modern styling for the chat layout and controls.
+- **Web UI Layer (Streamlit + Tailwind CSS v4)**
+  - Streamlit handles user interaction (inputs, outputs, session state).
+  - Tailwind CSS v4 powers the modern styling for the chat layout and controls.
 
-You can customize the **retrieval strategy**, **chunk sizes**, and **prompt templates** inside the Python code (primarily in `app.py` and any helper modules you add).
+You can customize the **retrieval strategy**, **chunk sizes**, and **prompt templates** in the Python code (primarily in `app.py` and related modules).
 
 ---
 
-👨‍💻 Author Info
------------------
+## 👨‍💻 Author
 
-- **Name**: *Zain Abbas*  
+- **Name**: Zain Abbas  
 - **GitHub**: `https://github.com/zainabbas-se`  
 - **LinkedIn**: `https://www.linkedin.com/in/zainabbas-se/`  
 - **Email**: `zain002.sdk@gmail.com`
 
 If you use this project as a starter template or extend it, ⭐ **star the repo** and feel free to open issues or PRs!
-
-
