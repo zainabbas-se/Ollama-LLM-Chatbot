@@ -114,9 +114,8 @@ You can customize the **retrieval strategy**, **chunk sizes**, and **prompt temp
 
 ## 👨‍💻 Author
 
-- **Name**: Zain Abbas  
-- **GitHub**: `https://github.com/zainabbas-se`  
-- **LinkedIn**: `https://www.linkedin.com/in/zainabbas-se/`  
-- **Email**: `zain002.sdk@gmail.com`
+- Zain Abbas
+- GitHub: https://github.com/zainabbas-se
+- LinkedIn: https://www.linkedin.com/in/zainabbas-se/
 
 If you use this project as a starter template or extend it, ⭐ **star the repo** and feel free to open issues or PRs!
